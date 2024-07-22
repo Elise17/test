@@ -1,395 +1,395 @@
 ### New URL
 
-    * Case:
-	* POST /api/v2/cases
-        * GET /api/v2/cases/{identifier}
-        * GET /api/v2/cases
-        * PUT /api/v2/cases/{identifier}
-        * DELETE /api/v2/cases/{identifier}
-        * GET /cases/export
-        * GET /cases/meta
-        * GET /case/review/update
-        * GET /cases/summary/fetch
-        * GET /manage/cases/trigger-pipeline
-        * GET /manage/cases/upload_files
-        * GET /overview/filter
-        * GET /case/users/list
-        * POST /case/access/Set-group
-        * POST /case/access/set-user
-        * POST /manage/cases/close/{identifier}	
-        * POST /manage/cases/reopen/{identifier}	       
-        * POST /manage/cases/update/{identifier}
+* Case:
+    * POST /api/v2/cases
+    * GET /api/v2/cases/{identifier}
+    * GET /api/v2/cases
+    * PUT /api/v2/cases/{identifier}
+    * DELETE /api/v2/cases/{identifier}
+    * GET /cases/export
+    * GET /cases/meta
+    * GET /case/review/update
+    * GET /cases/summary/fetch
+    * GET /manage/cases/trigger-pipeline
+    * GET /manage/cases/upload_files
+    * GET /overview/filter
+    * GET /case/users/list
+    * POST /case/access/Set-group
+    * POST /case/access/set-user
+    * POST /manage/cases/close/{identifier}	
+    * POST /manage/cases/reopen/{identifier}	       
+    * POST /manage/cases/update/{identifier}
 
-    * Ioc of case:
-        * POST /api/v2/cases/{identifier}/iocs
-        * GET /api/v2/cases/{identifier}/iocs
-        * GET /api/v2/iocs/{identifier}
-        * GET /api/v2/iocs
-        * PUT /api/v2/iocs/{identifier}
-        * DELETE /api/v2/iocs/{identifier}
-        * POST /case/iocs/{identifier}/comments/add
-        * GET /case/iocs/{identifier}/comments/list
-        * GET /case/iocs/{identifier}/comments/{identifier}
-        * POST /case/iocs/{identifier}/comments/{identifier}/edit
-        * DELETE /case/iocs/{identifier}/comments/{identifier}/delete
-        * POST /case/ioc/upload
-        * POST /case/ioc/update/{identifier}
+* Ioc of case:
+    * POST /api/v2/cases/{identifier}/iocs
+    * GET /api/v2/cases/{identifier}/iocs
+    * GET /api/v2/iocs/{identifier}
+    * GET /api/v2/iocs
+    * PUT /api/v2/iocs/{identifier}
+    * DELETE /api/v2/iocs/{identifier}
+    * POST /case/iocs/{identifier}/comments/add
+    * GET /case/iocs/{identifier}/comments/list
+    * GET /case/iocs/{identifier}/comments/{identifier}
+    * POST /case/iocs/{identifier}/comments/{identifier}/edit
+    * DELETE /case/iocs/{identifier}/comments/{identifier}/delete
+    * POST /case/ioc/upload
+    * POST /case/ioc/update/{identifier}
 
-    * Task of case:
-        * POST /api/v2/cases/{identifier}/tasks
-        * GET /api/v2/cases/{identifier}/tasks
-        * GET /api/v2/tasks/{identifier}
-        * GET /api/v2/tasks
-        * PUT /api/v2/tasks/{identifier}
-        * DELETE /api/v2/tasks/{identifier}
-        * POST /case/tasks/{identifier}/comments/add
-        * GET /case/tasks/{identifier}/comments/list
-        * GET /case/tasks/{identifier}/comments/{identifier}
-        * POST /case/tasks/{identifier}/comments/{identifier}/edit
-        * POST /case/tasks/{identifier}/comments/{identifier}/delete
-        * GET /case/tasks/state
-        * POST /case/tasks/status/update/{identifier}
-        * POST /case/tasks/update/{identifier}
+* Task of case:
+    * POST /api/v2/cases/{identifier}/tasks
+    * GET /api/v2/cases/{identifier}/tasks
+    * GET /api/v2/tasks/{identifier}
+    * GET /api/v2/tasks
+    * PUT /api/v2/tasks/{identifier}
+    * DELETE /api/v2/tasks/{identifier}
+    * POST /case/tasks/{identifier}/comments/add
+    * GET /case/tasks/{identifier}/comments/list
+    * GET /case/tasks/{identifier}/comments/{identifier}
+    * POST /case/tasks/{identifier}/comments/{identifier}/edit
+    * POST /case/tasks/{identifier}/comments/{identifier}/delete
+    * GET /case/tasks/state
+    * POST /case/tasks/status/update/{identifier}
+    * POST /case/tasks/update/{identifier}
 
-   * Asset of case :
-        * GET /case/assets/list
-        * POST /case/assets/add
-        * POST /case/assets/upload
-        * GET /case/assets/{asset_id}
-        * GET /case/assets/state
-        * POST /case/assets/update/{asset_id}
-        * POST /case/assets/delete/{asset_id}
-        * GET /case/assets/{asset_id}/comments/list
-        * POST /case/assets/{asset_id}/comments/add
-        * GET /case/assets/{asset_id}/comments/{comment_id}/edit
-        * POST /case/assets/{asset_id}/comments/{comment_id}
-        * POST /case/assets/{asset_id}/comments/{comment_id}/delete
+* Asset of case :
+    * GET /case/assets/list
+    * POST /case/assets/add
+    * POST /case/assets/upload
+    * GET /case/assets/{asset_id}
+    * GET /case/assets/state
+    * POST /case/assets/update/{asset_id}
+    * POST /case/assets/delete/{asset_id}
+    * GET /case/assets/{asset_id}/comments/list
+    * POST /case/assets/{asset_id}/comments/add
+    * GET /case/assets/{asset_id}/comments/{comment_id}/edit
+    * POST /case/assets/{asset_id}/comments/{comment_id}
+    * POST /case/assets/{asset_id}/comments/{comment_id}/delete
 
-    * Notes of case :
-        * POST /case/notes/add
-        * GET /case/notes/{note_id}
-        * GET /case/notes/state
-        * POST /case/notes/update/{note_id}
-        * POST /case/notes/delete/{note_id}
-        * GET, * POST /case/notes/search
-        * GET /case/notes/{identifier}/revisions/list
-        * GET /case/notes/{identifier}/revisions/{identifier}
-        * POST /case/notes/{identifier}/revisions/{identifier}/delete
-        * GET /case/notes/groups/list
-        * POST /case/notes/groups/add
-        * GET /case/notes/groups/{group_id}
-        * POST /case/notes/groups/update/{group_id}
-        * POST /case/notes/groups/delete/{group_id}
-        * GET /case/notes/directories/filter
-        * POST /case/notes/directories/add
-        * POST /case/notes/directories/update/{directory_id}
-        * POST /case/notes/directories/delete/{directory_id}
-        * POST /case/notes/{notes_id}/comments/add
-        * GET /case/notes/{notes_id}/comments/list
-        * GET /case/notes/{notes_id}/comments/{comments_id}
-        * POST /case/notes/{notes_id}/comments/{comments_id}/edit
-        * POST /case/notes/{notes_id}/comments/{comments_id}/delete
+* Notes of case :
+    * POST /case/notes/add
+    * GET /case/notes/{note_id}
+    * GET /case/notes/state
+    * POST /case/notes/update/{note_id}
+    * POST /case/notes/delete/{note_id}
+    * GET, * POST /case/notes/search
+    * GET /case/notes/{identifier}/revisions/list
+    * GET /case/notes/{identifier}/revisions/{identifier}
+    * POST /case/notes/{identifier}/revisions/{identifier}/delete
+    * GET /case/notes/groups/list
+    * POST /case/notes/groups/add
+    * GET /case/notes/groups/{group_id}
+    * POST /case/notes/groups/update/{group_id}
+    * POST /case/notes/groups/delete/{group_id}
+    * GET /case/notes/directories/filter
+    * POST /case/notes/directories/add
+    * POST /case/notes/directories/update/{directory_id}
+    * POST /case/notes/directories/delete/{directory_id}
+    * POST /case/notes/{notes_id}/comments/add
+    * GET /case/notes/{notes_id}/comments/list
+    * GET /case/notes/{notes_id}/comments/{comments_id}
+    * POST /case/notes/{notes_id}/comments/{comments_id}/edit
+    * POST /case/notes/{notes_id}/comments/{comments_id}/delete
 
-    * Timeline of case :
-        * GET /case/timeline/events/list
-        * GET /case/timeline/events/state
-        * POST /case/timeline/events/add
-        * GET /case/timeline/events/{event_id}
-        * POST /case/timeline/events/update/{event_id}
-        * POST /case/timeline/events/delete/{event_id}
-        * GET /case/timeline/events/list/filter/{id}
-        * GET /case/timeline/advanced-filter
-        * GET /case/timeline/events/list/{asset_id}
-        * GET /case/timeline/events/convert-date
-        * GET /case/timeline/events/csv_upload
-        * GET timeline/state
-        * GET /case/timeline/events/flag/{flag_id}
-        * GET /case/timeline/events/duplicate/{cur_id}
-        * GET /case/timeline/events/{event_id}/comments/list
-        * POST /case/timeline/events/{event_id}/comments/add
-        * GET /case/timeline/events/{event_id}/comments
-        * POST /case/timeline/events/{event_id}/comments/edit
-        * POST /case/timeline/events/{event_id}/comments/delete
-        * GET /case/timeline/visualize/data/by-category
-        * GET /case/timeline/visualize/data/by-asset
+* Timeline of case :
+    * GET /case/timeline/events/list
+    * GET /case/timeline/events/state
+    * POST /case/timeline/events/add
+    * GET /case/timeline/events/{event_id}
+    * POST /case/timeline/events/update/{event_id}
+    * POST /case/timeline/events/delete/{event_id}
+    * GET /case/timeline/events/list/filter/{id}
+    * GET /case/timeline/advanced-filter
+    * GET /case/timeline/events/list/{asset_id}
+    * GET /case/timeline/events/convert-date
+    * GET /case/timeline/events/csv_upload
+    * GET timeline/state
+    * GET /case/timeline/events/flag/{flag_id}
+    * GET /case/timeline/events/duplicate/{cur_id}
+    * GET /case/timeline/events/{event_id}/comments/list
+    * POST /case/timeline/events/{event_id}/comments/add
+    * GET /case/timeline/events/{event_id}/comments
+    * POST /case/timeline/events/{event_id}/comments/edit
+    * POST /case/timeline/events/{event_id}/comments/delete
+    * GET /case/timeline/visualize/data/by-category
+    * GET /case/timeline/visualize/data/by-asset
 
-    * Graph of case :
-        * GET /case/graph/getdata
+* Graph of case :
+    * GET /case/graph/getdata
 
-    * Evidence of case :
-        * GET /case/evidences/list
-        * POST /case/evidences/add
-        * GET /case/evidences/{evidence_id}
-        * GET /case/evidences/state
-        * POST /case/evidences/update/{evidence_id}
-        * POST /case/evidences/delete/{evidence_id}
-        * GET /case/evidences/{evidence_id}/comments/list
-        * POST /case/evidences/{evidence_id}/comments/add
-        * POST /case/evidences/{evidence_id}/comments/{comments_id}/edit
-        * GET /case/evidences/{evidence_id}/comments/{comments_id}
-        * POST /case/evidences/{evidence_id}/comments/delete
+* Evidence of case :
+    * GET /case/evidences/list
+    * POST /case/evidences/add
+    * GET /case/evidences/{evidence_id}
+    * GET /case/evidences/state
+    * POST /case/evidences/update/{evidence_id}
+    * POST /case/evidences/delete/{evidence_id}
+    * GET /case/evidences/{evidence_id}/comments/list
+    * POST /case/evidences/{evidence_id}/comments/add
+    * POST /case/evidences/{evidence_id}/comments/{comments_id}/edit
+    * GET /case/evidences/{evidence_id}/comments/{comments_id}
+    * POST /case/evidences/{evidence_id}/comments/delete
 
-    * Case Classification :
-        * GET /manage/case-classifications/list
-        * POST /manage/case-classifications/add
-        * GET /manage/case-classifications/{classification_id}
-        * POST /manage/case-classifications/update/{classification_id}
-        * POST /manage/case-classifications/delete/{classification_id}
-        * POST /manage/case-classifications/search
+* Case Classification :
+    * GET /manage/case-classifications/list
+    * POST /manage/case-classifications/add
+    * GET /manage/case-classifications/{classification_id}
+    * POST /manage/case-classifications/update/{classification_id}
+    * POST /manage/case-classifications/delete/{classification_id}
+    * POST /manage/case-classifications/search
 
-    * Case summary and tasklog :
-        * POST /case/tasklog/add
-        * POST /case/summary/update
+* Case summary and tasklog :
+    * POST /case/tasklog/add
+    * POST /case/summary/update
 
-    * Alert :
-        * GET /alerts/{alert_id}
-        * POST /alerts/add
-        * POST /alerts/update/{alert_id}
-        * POST /alerts/delete/{alert_id}
-        * GET /alerts/filter
-        * POST /alerts/merge/{alert_id}
-        * POST /alerts/unmerge/{alert_id}
-        * POST/alerts/escalate/{alert_id}
-        * POST /alerts/batch/update
-        * POST alerts/batch/delete
-        * POST/alerts/batch/merge
-        * POST /alerts/batch/escalate
-        * GET /alerts/similarities/{id_alert}
-        * GET /alerts/{id_alert}/comments/list
-        * GET /alerts/{id_alert}/comments/{id_commnents}
-        * POST /alerts/{id_alert}/comments/{id_commnents}/add
-        * POST /alerts/{id_alert}/comments/{id_commnents}/edit
-        * POST /alerts/{id_alert}/comments/{id_commnents}/delete
-        * GET manage/alert-status/{id_alert}/list
-        * GET manage/alert-status/{id_clasification}
-        * POST manage/alert-status/search
-        * GET manage/alert-resolutions/list
-        * GET manage/alert-resolutions/{id_resolution}
-        * POST manage/alert-resolutions/search
+* Alert :
+    * GET /alerts/{alert_id}
+    * POST /alerts/add
+    * POST /alerts/update/{alert_id}
+    * POST /alerts/delete/{alert_id}
+    * GET /alerts/filter
+    * POST /alerts/merge/{alert_id}
+    * POST /alerts/unmerge/{alert_id}
+    * POST/alerts/escalate/{alert_id}
+    * POST /alerts/batch/update
+    * POST alerts/batch/delete
+    * POST/alerts/batch/merge
+    * POST /alerts/batch/escalate
+    * GET /alerts/similarities/{id_alert}
+    * GET /alerts/{id_alert}/comments/list
+    * GET /alerts/{id_alert}/comments/{id_commnents}
+    * POST /alerts/{id_alert}/comments/{id_commnents}/add
+    * POST /alerts/{id_alert}/comments/{id_commnents}/edit
+    * POST /alerts/{id_alert}/comments/{id_commnents}/delete
+    * GET manage/alert-status/{id_alert}/list
+    * GET manage/alert-status/{id_clasification}
+    * POST manage/alert-status/search
+    * GET manage/alert-resolutions/list
+    * GET manage/alert-resolutions/{id_resolution}
+    * POST manage/alert-resolutions/search
 
-    * Group :
-        * GET /manage/groups/list
-        * POST /manage/groups/add
-        * GET /manage/groups/{group_id}
-        * POST /manage/groups/update/{group_id}
-        * POST /manage/groups/delete/{group_id}
-        * POST /manage/groups/{group_id}/members/update
-        * POST /manage/groups/{group_id}/members/delete/{user_id}
-        * POST /manage/groups/{group_id}/cases-access/update
-        * POST /manage/groups/{group_id}/cases-access/delete
+* Group :
+    * GET /manage/groups/list
+    * POST /manage/groups/add
+    * GET /manage/groups/{group_id}
+    * POST /manage/groups/update/{group_id}
+    * POST /manage/groups/delete/{group_id}
+    * POST /manage/groups/{group_id}/members/update
+    * POST /manage/groups/{group_id}/members/delete/{user_id}
+    * POST /manage/groups/{group_id}/cases-access/update
+    * POST /manage/groups/{group_id}/cases-access/delete
 
-    * User :
-        * GET /manage/users/list
-        * POST /manage/users/add
-        * GET /manage/users/{user_id}
-        * POST /manage/users/update/{user_id}
-        * POST /manage/users/delete/{user_id}
-        * GET /manage/users/filter
-        * POST /manage/users/{user_id}/groups/update
-        * POST /manage/users/{user_id}/customers/update
-        * POST /manage/users/{user_id}/cases-access/update
-        * POST /manage/users/{user_id}/cases-access/delete
-        * GET /manage/users/restricted/list
-        * GET /manage/users/renew-akpi-key/{user_id}
-        * GET /manage/users/activate
-        * GET /manage/users/deactivate
-        * GET /manage/users/lookup/id/{cur_id}
-        * GET /manage/users/lookup/login/{login}
-        * GET /manage/users/restricted/list
+* User :
+    * GET /manage/users/list
+    * POST /manage/users/add
+    * GET /manage/users/{user_id}
+    * POST /manage/users/update/{user_id}
+    * POST /manage/users/delete/{user_id}
+    * GET /manage/users/filter
+    * POST /manage/users/{user_id}/groups/update
+    * POST /manage/users/{user_id}/customers/update
+    * POST /manage/users/{user_id}/cases-access/update
+    * POST /manage/users/{user_id}/cases-access/delete
+    * GET /manage/users/restricted/list
+    * GET /manage/users/renew-akpi-key/{user_id}
+    * GET /manage/users/activate
+    * GET /manage/users/deactivate
+    * GET /manage/users/lookup/id/{cur_id}
+    * GET /manage/users/lookup/login/{login}
+    * GET /manage/users/restricted/list
 
-    * Case Asset-type :
-        * GET /manage/asset-type/list
-        * POST /manage/asset-type/add
-        * GET /manage/asset-type/{asset_type_id}
-        * POST /manage/asset-type/update/{asset_type_id}
-        * POST /manage/asset-type/delete/{asset_type_id}
-        * POST /manage/asset-type/search
+* Case Asset-type :
+    * GET /manage/asset-type/list
+    * POST /manage/asset-type/add
+    * GET /manage/asset-type/{asset_type_id}
+    * POST /manage/asset-type/update/{asset_type_id}
+    * POST /manage/asset-type/delete/{asset_type_id}
+    * POST /manage/asset-type/search
 
-    * Ioc-type :
-        * GET /manage/ioc-types/list
-        * POST /manage/ioc-types/add
-        * GET /manage/ioc-types/{ioc_type_id}
-        * POST /manage/ioc-types/update/{ioc_type_id}
-        * POST /manage/ioc-types/delete/{ioc_type_id}
-        * POST /manage/ioc-types/search
+* Ioc-type :
+    * GET /manage/ioc-types/list
+    * POST /manage/ioc-types/add
+    * GET /manage/ioc-types/{ioc_type_id}
+    * POST /manage/ioc-types/update/{ioc_type_id}
+    * POST /manage/ioc-types/delete/{ioc_type_id}
+    * POST /manage/ioc-types/search
 
-    * Severities :
-        * GET /manage/severities/list
-        * GET /manage/severities/{id_severities}
-        * POST /manage/severities/search
+* Severities :
+    * GET /manage/severities/list
+    * GET /manage/severities/{id_severities}
+    * POST /manage/severities/search
 
-    * TLP :
-        * GET /manage/tlp/list
-        * GET /manage/tlp/int:cur_id
+* TLP :
+    * GET /manage/tlp/list
+    * GET /manage/tlp/int:cur_id
 
-    * Ioc-type :
-        * GET /manage/modules/list
-        * POST /manage/modules/add
-        * GET /manage/modules/set-parameter/{param_name}
-        * GET /manage/modules/{ioc_type_id}
-        * POST /manage/modules/update/{module_id}
-        * POST /manage/modules/delete/{module_id}
-        * POST /manage/modules/remove/{module_id}
-        * POST /manage/modules/search
-        * POST /manage/modules/enable/{module_id}
-        * POST /manage/modules/disable/{module_id}
-        * GET /manage/modules/export-config/{module_id}
-        * GET/manage/modules/import-config/{module_id}
-        * GET /manage/modules/hooks/list
+* Ioc-type :
+    * GET /manage/modules/list
+    * POST /manage/modules/add
+    * GET /manage/modules/set-parameter/{param_name}
+    * GET /manage/modules/{ioc_type_id}
+    * POST /manage/modules/update/{module_id}
+    * POST /manage/modules/delete/{module_id}
+    * POST /manage/modules/remove/{module_id}
+    * POST /manage/modules/search
+    * POST /manage/modules/enable/{module_id}
+    * POST /manage/modules/disable/{module_id}
+    * GET /manage/modules/export-config/{module_id}
+    * GET/manage/modules/import-config/{module_id}
+    * GET /manage/modules/hooks/list
 
-    * Evidence-type :
-        * GET /manage/evidence-types/list
-        * POST /manage/evidence-types/add
-        * GET /manage/evidence-types/{evidence_id}
-        * POST /manage/evidence-types/update/{evidence_id}
-        * POST /manage/evidence-types/delete/{evidence_id}
-        * POST /manage/evidence-types/search
+* Evidence-type :
+    * GET /manage/evidence-types/list
+    * POST /manage/evidence-types/add
+    * GET /manage/evidence-types/{evidence_id}
+    * POST /manage/evidence-types/update/{evidence_id}
+    * POST /manage/evidence-types/delete/{evidence_id}
+    * POST /manage/evidence-types/search
 
-    * Event-categories :
-        * GET /manage/event-categories/list
-        * GET /manage/event-categories/{event_id}
-        * POST /manage/event-categories/search
+* Event-categories :
+    * GET /manage/event-categories/list
+    * GET /manage/event-categories/{event_id}
+    * POST /manage/event-categories/search
 
-    * Tags :
-        * GET /manage/tags/filter
-        * GET /manage/tags/suggest
+* Tags :
+    * GET /manage/tags/filter
+    * GET /manage/tags/suggest
 
-    * Case-state :
-        * GET /manage/case-states/list
-        * POST /manage/case-states/add
-        * GET /manage/case-states/{state_id}
-        * POST /manage/case-states/update/{state_id}
-        * POST /manage/case-states/delete/{state_id}
+* Case-state :
+    * GET /manage/case-states/list
+    * POST /manage/case-states/add
+    * GET /manage/case-states/{state_id}
+    * POST /manage/case-states/update/{state_id}
+    * POST /manage/case-states/delete/{state_id}
 
-    * Case-template :
-        * GET /manage/case-templates/list
-        * POST /manage/case-templates/add
-        * POST /manage/case-templates/update/{template_id}
-        * POST /manage/case-templates/delete/{template_id}
-        * GET /manage/templates/download/{identifier}
+* Case-template :
+    * GET /manage/case-templates/list
+    * POST /manage/case-templates/add
+    * POST /manage/case-templates/update/{template_id}
+    * POST /manage/case-templates/delete/{template_id}
+    * GET /manage/templates/download/{identifier}
 
-    * Analysis-status :
-        * GET /manage/analysis-status/list
-        * GET /manage/compromise-status/list
-        * GET /manage/outcome-status/list
-        * GET /manage/analysis-status/{analysis_status_id}
-        * POST /manage/analysis-status/search
+* Analysis-status :
+    * GET /manage/analysis-status/list
+    * GET /manage/compromise-status/list
+    * GET /manage/outcome-status/list
+    * GET /manage/analysis-status/{analysis_status_id}
+    * POST /manage/analysis-status/search
 
-    * Tasks :
-        * GET /global/tasks/list
-        * POST /global/tasks/add
-        * POST /global/tasks/update/{task_id}
-        * POST /global/tasks/delete/{task_id}
-        * GET /manage/task-status/list
-        * GET /manage/task-status/{task_status_id}
+* Tasks :
+    * GET /global/tasks/list
+    * POST /global/tasks/add
+    * POST /global/tasks/update/{task_id}
+    * POST /global/tasks/delete/{task_id}
+    * GET /manage/task-status/list
+    * GET /manage/task-status/{task_status_id}
 
-    * Templates :
-        * GET /manage/task-status/list
-        * GET /manage/task-status/{task_status_id}
+* Templates :
+    * GET /manage/task-status/list
+    * GET /manage/task-status/{task_status_id}
 
-    * Customer :
-        * GET /manage/customers/list
-        * POST /manage/customers/add
-        * GET /manage/customers/{customer_id}
-        * POST /manage/customers/update/{id_customer}
-        * POST /manage/customers/delete/{id_customer}
-        * POST /manage/customers/{customer_id}/contacts/add
-        * POST /manage/customers/{customer_id}/contacts/{contact_id}/update
-        * POST /manage/customers/{customer_id}/contacts/{contact_id}/delete
-        * GET /manage/customers/{customer_id}/cases
+* Customer :
+    * GET /manage/customers/list
+    * POST /manage/customers/add
+    * GET /manage/customers/{customer_id}
+    * POST /manage/customers/update/{id_customer}
+    * POST /manage/customers/delete/{id_customer}
+    * POST /manage/customers/{customer_id}/contacts/add
+    * POST /manage/customers/{customer_id}/contacts/{contact_id}/update
+    * POST /manage/customers/{customer_id}/contacts/{contact_id}/delete
+    * GET /manage/customers/{customer_id}/cases
 
-    * Datastore :
-        * GET /datastore/list/tree
-        * POST /datastore/file/add/{parent_id}
-        * POST /datastore/file/add-interactive
-        * GET /datastore/file/info/{file_id}
-        * GET /datastore/file/view/{file_id}
-        * POST /datastore/file/update/{file_id}
-        * POST /datastore/file/move/{file_id}
-        * POST /datastore/file/delete/{file_id}
-        * POST /datastore/folder/add
-        * POST /datastore/folder/rename/{folder_id}
-        * POST /datastore/folder/move/{folder_id}
+* Datastore :
+    * GET /datastore/list/tree
+    * POST /datastore/file/add/{parent_id}
+    * POST /datastore/file/add-interactive
+    * GET /datastore/file/info/{file_id}
+    * GET /datastore/file/view/{file_id}
+    * POST /datastore/file/update/{file_id}
+    * POST /datastore/file/move/{file_id}
+    * POST /datastore/file/delete/{file_id}
+    * POST /datastore/folder/add
+    * POST /datastore/folder/rename/{folder_id}
+    * POST /datastore/folder/move/{folder_id}
 
-    * Dim :
-        * GET /dim/tasks/list/{rows_count}
-        * GET /dim/tasks 
-        * GET /dim/tasks/status/{identifier}
-        * GET /dim/tasks/limited-list
-        * GET /dim/hooks/options/{object_type}/list
-        * POST /dim/hooks/call
+* Dim :
+    * GET /dim/tasks/list/{rows_count}
+    * GET /dim/tasks 
+    * GET /dim/tasks/status/{identifier}
+    * GET /dim/tasks/limited-list
+    * GET /dim/hooks/options/{object_type}/list
+    * POST /dim/hooks/call
 
-    * Profile :
-        * GET /user/token/renew
-        * POST /user/has-permission
-        * POST /user/update
-        * GET /user/theme/set/{string}
-        * GET /user/deletion-prompt/set/{string}
-        * GET /user/mini-sidebar/set/{string}
-        * GET /user/refresh-permissions
-        * GET /user//user/whoami
+* Profile :
+    * GET /user/token/renew
+    * POST /user/has-permission
+    * POST /user/update
+    * GET /user/theme/set/{string}
+    * GET /user/deletion-prompt/set/{string}
+    * GET /user/mini-sidebar/set/{string}
+    * GET /user/refresh-permissions
+    * GET /user//user/whoami
 
-    * Profile :
-        * GET /case/report/generate-activities/{report_id}
-        * GET /case/report/generate-investigation/{report_id}
+* Profile :
+    * GET /case/report/generate-activities/{report_id}
+    * GET /case/report/generate-investigation/{report_id}
 
-    * Search :
-        * GET /search
+* Search :
+    * GET /search
 
-    * Access-control :
-        * GET /manage/access-control/audit/users/{id_user}
-        * GET /manage/access-control/recompute-effective-user-ac
-        * GET /manage/access-control/recompute-effective-user-ac/{user_id}
-        * GET /manage/access-control/reset-mfa/{identifier}
+* Access-control :
+    * GET /manage/access-control/audit/users/{id_user}
+    * GET /manage/access-control/recompute-effective-user-ac
+    * GET /manage/access-control/recompute-effective-user-ac/{user_id}
+    * GET /manage/access-control/reset-mfa/{identifier}
 
-    * Api :
-        * GET /api/versions
-        * GET /api/ping
+* Api :
+    * GET /api/versions
+    * GET /api/ping
 
-    * Assets:
-        * GET /manage/assets/filter
+* Assets:
+    * GET /manage/assets/filter
 
-    * Attributes :
-        * GET /manage/attributes/list
-        * POST /manage/attributes/update/{id_attribute}
+* Attributes :
+    * GET /manage/attributes/list
+    * POST /manage/attributes/update/{id_attribute}
 
-    * Alert-status :
-        * GET /manage/alert-status/list
-        * GET /manage/alert-status/{classification_id}
-        * POST /manage/alert-status/search
-        * GET /manage/alert-resolutions/list
-        * GET /manage/alert-resolutions/{resolution_id}
-        * POST /manage/alert-resolutions/search
+* Alert-status :
+    * GET /manage/alert-status/list
+    * GET /manage/alert-status/{classification_id}
+    * POST /manage/alert-status/search
+    * GET /manage/alert-resolutions/list
+    * GET /manage/alert-resolutions/{resolution_id}
+    * POST /manage/alert-resolutions/search
 
-    * Activities :
-        * GET /activities/list
-        * GET /activities/list-all
+* Activities :
+    * GET /activities/list
+    * GET /activities/list-all
 
-    * Context :
-        * GET /context/search-cases
+* Context :
+    * GET /context/search-cases
 
-    * Server :
-        * GET /manage/server/backups/make-db
-        * POST /manage/settings/update
+* Server :
+    * GET /manage/server/backups/make-db
+    * POST /manage/settings/update
 
-    * Dashboard :
-        url /dashboard/case_charts
-        * GET /global/tasks/list
-        * POST /global/tasks/add
-        * GET /global/tasks/{id_task}
-        * POST /global/tasks/update/{id_task}
-        * POST /global/tasks/delete/{id_task}
+* Dashboard :
+    url /dashboard/case_charts
+    * GET /global/tasks/list
+    * POST /global/tasks/add
+    * GET /global/tasks/{id_task}
+    * POST /global/tasks/update/{id_task}
+    * POST /global/tasks/delete/{id_task}
 
-    * User :
-        * GET /user/cases/list
-        * GET /user/tasks/list
-        * GET /user/reviews/list
-        * POST /user/tasks/status/update
+* User :
+    * GET /user/cases/list
+    * GET /user/tasks/list
+    * GET /user/reviews/list
+    * POST /user/tasks/status/update
 
-    * Filters :
-        * GET /filters/{string:filter_type}/list
-        * POST /filters/add
-        * GET /filters/{id_filter}
-        * POST /filters/update/{id_filter}
-        * POST /filters/delete/{id_filter}
+* Filters :
+    * GET /filters/{string:filter_type}/list
+    * POST /filters/add
+    * GET /filters/{id_filter}
+    * POST /filters/update/{id_filter}
+    * POST /filters/delete/{id_filter}
 
